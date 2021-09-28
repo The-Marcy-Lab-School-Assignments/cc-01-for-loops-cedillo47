@@ -17,7 +17,7 @@ function countFromOne(x){
 //3
 function threeAndFiveInFifty(){
   for (let i = 1; i <= 50; i++){
-  if (i % 3 == 0 || i % 5 == 0 ){
+  if (i % 3 === 0 || i % 5 === 0 ){
   console.log(i);      
  };
 }
@@ -27,11 +27,20 @@ function threeAndFiveInFifty(){
 //4
 function threeAndFive(x){
   for (let i = 1; i <= x; i++){
-      if (i % 3 == 0 || i % 5 == 0 ){
+      if (i % 3 === 0 || i % 5 === 0 ){
           console.log(i);
       }
   }
 }
 
 
-threeAndFiveInFifty();
+//
+function triple(arr){
+  var number = [];
+  for (let i = 0; i < arr.length; i++ ){
+  number.push(arr[i]*3)
+  }
+  return number;
+}
+
+console.log(triple([1, 2, 3]))
